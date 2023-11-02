@@ -1,0 +1,10 @@
+flask
+requests
+
+torch
+torchvision
+transformers
+accelerate
+bitsandbytes
+llava-torch
+Pillow
