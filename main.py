@@ -6,7 +6,7 @@ import numpy as np
 import tensorflow as tf
 import torch
 from flask import Flask, request, jsonify
-from flask_ngrok import run_with_ngrok
+
 
 # TensorFlow Model
 tf_model_path = "real-vs-screen_reav_screen.h5"
@@ -36,7 +36,7 @@ def load_llava_model():
         )
 # Flask App
 app = Flask(__name__)
-run_with_ngrok(app)
+
 
 # TensorFlow Helper Function
 def predict_image_class(image_data):
