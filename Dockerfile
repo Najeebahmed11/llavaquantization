@@ -5,7 +5,7 @@ WORKDIR /app
 COPY . /app
 
 # Install any needed packages specified in requirements.txt
-RUN pip install requests torch torchvision transformers accelerate bitsandbytes llava-torch Pillow flask-ngrok tensorflow Pillow flask 
+RUN pip install requests torch torchvision transformers accelerate bitsandbytes llava-torch Pillow flask-ngrok tensorflow Pillow flask runpod
 
 
 
