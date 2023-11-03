@@ -8,6 +8,12 @@ COPY . /app
 RUN pip install --no-cache-dir flask requests torch torchvision transformers accelerate bitsandbytes llava-torch Pillow
 
 
+COPY entrypoint.sh /app/
+RUN chmod +x /app/entrypoint.sh
+
 EXPOSE 8080
+
+# Use the entrypoint script to start the app
+RUN ["/app/entrypoint.sh"]
 
 CMD ["python", "app.py"]
