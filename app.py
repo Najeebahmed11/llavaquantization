@@ -10,7 +10,7 @@ from flask_ngrok import run_with_ngrok
 import json
 import runpod
 # TensorFlow Model
-tf_model_path = "/content/real-vs-screen_reav_screen.h5"
+tf_model_path = "real-vs-screen_reav_screen.h5"
 tf_model = tf.keras.models.load_model(tf_model_path)
 class_names = ["real", "screen"]
 
