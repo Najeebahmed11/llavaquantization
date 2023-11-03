@@ -4,7 +4,9 @@ WORKDIR /app
 
 COPY . /app
 
-RUN pip install --no-cache-dir -r requirements.txt
+# Install any needed packages specified in requirements.txt
+RUN pip install --no-cache-dir flask requests torch torchvision transformers accelerate bitsandbytes llava-torch Pillow
+
 
 EXPOSE 8080
 
